@@ -1,0 +1,23 @@
+<ANNOTATION_DOCUMENT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AUTHOR="Francis Steen" DATE="2016-02-28T16:48:38-08:00" FORMAT="2.8" VERSION="2.8" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv2.8.xsd">
+<HEADER MEDIA_FILE="" TIME_UNITS="milliseconds"/>
+<TIME_ORDER/>
+<TIER LINGUISTIC_TYPE_REF="Person" TIER_ID="Speaker"/>
+<TIER LINGUISTIC_TYPE_REF="Speech" PARENT_REF="Speaker" TIER_ID="Speech"/>
+<TIER LINGUISTIC_TYPE_REF="Coordinates" PARENT_REF="Speaker" TIER_ID="Rectangle"/>
+<TIER LINGUISTIC_TYPE_REF="Gesture" PARENT_REF="Speaker" TIER_ID="Gesture"/>
+<TIER LINGUISTIC_TYPE_REF="Coordinates" PARENT_REF="Gesture" TIER_ID="Circle"/>
+<TIER LINGUISTIC_TYPE_REF="Head" PARENT_REF="Gesture" TIER_ID="Head"/>
+<TIER LINGUISTIC_TYPE_REF="Body" PARENT_REF="Gesture" TIER_ID="Body"/>
+<TIER LINGUISTIC_TYPE_REF="Arms & hands" PARENT_REF="Gesture" TIER_ID="Arms & hands"/>
+<LINGUISTIC_TYPE GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Person" TIME_ALIGNABLE="true"/>
+<LINGUISTIC_TYPE CONSTRAINTS="Included_In" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Speech" TIME_ALIGNABLE="true"/>
+<LINGUISTIC_TYPE CONSTRAINTS="Included_In" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Coordinates" TIME_ALIGNABLE="true"/>
+<LINGUISTIC_TYPE CONSTRAINTS="Included_In" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Gesture" TIME_ALIGNABLE="true"/>
+<LINGUISTIC_TYPE CONSTRAINTS="Included_In" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Head" TIME_ALIGNABLE="true"/>
+<LINGUISTIC_TYPE CONSTRAINTS="Included_In" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Body" TIME_ALIGNABLE="true"/>
+<LINGUISTIC_TYPE CONSTRAINTS="Included_In" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Arms & hands" TIME_ALIGNABLE="true"/>
+<CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
+<CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
+<CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
+<CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed" STEREOTYPE="Included_In"/>
+</ANNOTATION_DOCUMENT>
